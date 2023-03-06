@@ -328,7 +328,11 @@ margin-top: 20px;
   
     }
 
-.list1{display: block;}
+.list1{display: block;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 }
 
 .footer {
