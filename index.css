@@ -18,7 +18,14 @@
     justify-content: space-around;
     align-items: center;
     line-height: 5rem;
+    position: sticky;
+        top: 0px;
+        z-index: 1;
+        margin-top: 0px;
+    
 } 
+  
+        
 
 .left h1 {
     font-size: 2.5rem;
@@ -75,6 +82,12 @@
         transition: all 1s;
         z-index: 1;
 
+    }
+    navbar{
+        position: sticky;
+        top: 0px;
+        z-index: 1;
+        margin-top: 0px;
     }
     .slider .slidess{
         display: none;
@@ -183,7 +196,7 @@ padding:0  50px;
   border-radius: 10px;
 }
 .slides::-webkit-scrollbar-track {
-  background: transparent;
+  background:whitesmoke ;
 } 
 .slides > div {
   scroll-snap-align: start;
