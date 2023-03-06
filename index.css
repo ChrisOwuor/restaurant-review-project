@@ -75,6 +75,9 @@
         transition: all 1s;
         z-index: 1;
     }
+    .slider a{
+        display: none;
+    }
 
     #check {
         display: none;
