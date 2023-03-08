@@ -1,17 +1,68 @@
-Contrary to popular belief, Lorem Ipsum is
- not simply random text. It has roots in a piece of classical Latin 
- literature from 45 BC, making it over 2000 years old. 
+ Blog section
+  <section class="blogs-container">
+    <!-- Blog Item  -->
+    <div class="blogs-item">
+      <div class="blog-image">
+        <div class="slider">
+          <a class="slidess" href="#slide-1">1</a>
+          <a class="slidess" href="#slide-2">2</a>
+          <a class="slidess" href="#slide-3">3</a>
+          <a class="slidess" href="#slide-4">4</a>
+          <a class="slidess" href="#slide-5">5</a>
 
-Richard McClintock, a Latin professor at Hampden-
-Sydney College in Virginia, looked up one of the more
- obscure Latin words, consectetur, from a Lorem Ipsum 
- passage, and going through the cites of the word in classical
-  literature, discovered the undoubtable source. Lorem Ipsum comes 
-  from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of G
-  ood and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, 
-  very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..",
-   comes from a line in section 1.10.32.
+          <div class="slides">
+            <div  id="slide-1">1</div>
+            <div  id="slide-2">2</div>
+            <div  id="slide-3">3</div>
+            <div  id="slide-4">4</div>
+            <div  id="slide-5">5</div>
+          </div>
+        </div>
+      </div>
+      <p class="description">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+        suscipit fugiat ducimus sint expedita ratione temporibus. Neque,
+        voluptatum?<span><a href="#">Read more...</a></span>
+      </p>
 
-The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested
-. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced i
-n their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+      <div class="content">
+        <div class="about-author">
+          <div class="author-image">
+            <img src="images/pexels-abet-llacer-3025236.jpg" alt="author" />
+
+          </div><div>
+    <p>By - <span> Raju Webdev </span></p>
+          <p>December 20, 2019</p>
+        </div>
+      </div>
+    </div>
+    </div>
+ 
+    <!-- footer -->
+  </section>
+   <footer class="footer">
+        <div class="social-items">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+
+        <ul class="list1">
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">Services</a>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#">Terms</a>
+            </li>
+            <li>
+                <a href="#">Privacy Policy</a>
+            </li>
+        </ul>
+        <p class="copyright"> @ All rights reserved chris owuor in 2023 </p>
