@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Blog Page Design</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="left">
+      <h1>Navbar</h1>
+    </div>
+    <div class="right">
+         <input type="checkbox" id="check" />
+      <label for="check" class="checkBtn">
+        <img id="logo-img" src="images/401-logo.png" alt=""  />
+      </label>
+      <ul class="list">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+   
+    </div>
+  </nav>
+    <!-- script actions -->
+<div class="body">
+ 
+  <form action="" id="btns">
+      <div class="form">
+      <div class="title">Welcome</div>
+      <div class="subtitle">Let's create your account!</div>
+      <div class="input-container ic1">
+        <input id="firstname" class="input" type="text" />
+        <div class="cut"></div>
+        <label for="firstname" class="placeholder">First name</label>
+      </div>
+      <div class="input-container ic2">
+        <input id="lastname" class="input" type="text" />
+        <div class="cut"></div>
+        <label for="lastname" class="placeholder">Last name</label>
+      </div>
+      <div class="input-container ic2">
+        <input id="email" class="input" type="email" />
+        <div class="cut cut-short"></div>
+        <label for="email" class="placeholder">Email</label>
+      </div>
+ <button type="submit"class="submit">submit</button>
+    </div>
+         
+
+    </form>
+    
+</div>
+<button id="del">Delete local storage</button>
+<h1>Available Blogs</h1>
+<div class="testdiv">
+
+</div>
+<!-- choose images -->
+<input type="file" name="uimage" id="userinput">
+<div  class="disp"></div>
+<!-- test button -->
+<!-- this buttn will add a div with an image for every image added -->
+<button class="add">Add div</button>
+
+  <!-- footer -->
+
+  
+   <footer class="footer">
+        <div class="social-items">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+
+        <ul class="list1">
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">Services</a>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#">Terms</a>
+            </li>
+            <li>
+                <a href="#">Privacy Policy</a>
+            </li>
+        </ul>
+        <p class="copyright"> @ All rights reserved chris owuor in 2023 </p>
+    </footer><script src="app.js"></script>
+
+</body>
+
+</html>

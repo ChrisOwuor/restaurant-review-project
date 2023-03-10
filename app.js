@@ -84,11 +84,11 @@ const getList = function (dataArrays) {
           <a class="slidess" href="#slide-5">5</a>
 
           <div class="slides">
-            <div  id="slide-1">1</div>
-            <div  id="slide-2">2</div>
-            <div  id="slide-3">3</div>
-            <div  id="slide-4">4</div>
-            <div  id="slide-5">5</div>
+            <div class="disp" id="slide-1">1</div>
+            <div   class="innerDiv"id="slide-2">2</div>
+            <div class="innerDiv" id="slide-3">3</div>
+            <div class="innerDiv" id="slide-4">4</div>
+            <div class="innerDiv" id="slide-5">5</div>
           </div>
         </div>
       </div>
@@ -113,8 +113,43 @@ const getList = function (dataArrays) {
     testDiv.insertAdjacentHTML('beforeend',itemTag)
   });
 }
+//function to add image by button
+// document.querySelector('.add').addEventListener('click', () => {
+//   let picDiv=document.createElement('div')
+//   document.querySelector('.slides').appendChild(picDiv)
+//   let myimg =document.createElement('img')
+//   myimg.src=reader.result
+//   picDiv.appendChild(myimg)
+// })
+
 //paragraph content
 
+//function to add images
 
+const disp = document.querySelector('.disp');
+
+const userinput = document.querySelector('#userinput');
+
+userinput.addEventListener('change', function(e){
+   let reader = new FileReader();
+	 
+  reader.onload = function () {
+      let picDiv = document.createElement("div");
+      document.querySelector(".slides").appendChild(picDiv);
+      let myimg = document.createElement("img");
+      myimg.src = reader.result;
+      picDiv.appendChild(myimg);
+      let output = document.createElement('img');
+      output.src = reader.result;
+      disp.appendChild(output);
+    //  output.style.objectFit = 'cover'
+      output.style.maxWidth='100%'
+      output.style.maxHeight='100%'
+
+   }
+	
+   reader.readAsDataURL(e.target.files[0]);
+	
+});
 //function to deletediv
 
